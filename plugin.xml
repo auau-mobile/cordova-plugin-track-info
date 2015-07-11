@@ -16,7 +16,7 @@
     <platform name="android">
 
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="TrackInfo">
+            <feature name="CurrentlyPlaying">
                 <param name="android-package" value="com.paranoidfrog.trackinfo.CurrentlyPlaying" />
             </feature>
         </config-file>
@@ -27,7 +27,7 @@
     <platform name="ios">
 
         <config-file target="config.xml" parent="/widget">
-            <feature name="Hello">
+            <feature name="CurrentlyPlaying">
                 <param name="ios-package" value="HWPHello" />
             </feature>
         </config-file>
