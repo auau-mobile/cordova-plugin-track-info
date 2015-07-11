@@ -65,7 +65,7 @@ public class CurrentlyPlaying extends CordovaPlugin {
                 String musicInfo = artist + " - " + track;
 
                     // (The null check is for the ARM Emulator, please use Intel Emulator for better results)
-                    if(Hello.this.webView != null)
+                    if(CurrentlyPlaying.this.webView != null)
                         sendUpdate(musicInfo);
                 }
             };
