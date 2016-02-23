@@ -14,7 +14,7 @@
        specific language governing permissions and limitations
        under the License.
 */
-package com.paranoidfrog.trackinfo;
+package labs.marsala.trackinfo;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -89,7 +89,7 @@ public class CurrentlyPlaying extends CordovaPlugin {
             PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, lastMusic);
             pluginResult.setKeepCallback(true);
             callbackContext.sendPluginResult(pluginResult);
-            
+
             return true;
         }
         return false;
@@ -113,7 +113,7 @@ public class CurrentlyPlaying extends CordovaPlugin {
     /**
      * Create a new plugin result and send it back to JavaScript
      *
-     * @param 
+     * @param
      */
     private void sendUpdate(String music) {
         if (musicCallbackContext != null) {
@@ -122,7 +122,7 @@ public class CurrentlyPlaying extends CordovaPlugin {
             musicCallbackContext.sendPluginResult(result);
         }
         webView.postMessage("currentplaying", music);
-        
+
         lastMusic = music;
     }
 
